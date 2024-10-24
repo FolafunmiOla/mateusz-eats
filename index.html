@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mateusz Eats</title>
+    <!-- Link to Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link to FontAwesome for Icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Link to Bootstrap CSS from CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+
+      .hero {
+        height: 100vh;
+        background: url("static/top.png") no-repeat center center/cover;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+      .hero h1 {
+        font-size: 3rem;
+        font-weight: 600;
+      }
+
+      .hero p {
+        font-size: 1.5rem;
+        font-weight: 300;
+      }
+
+      .section {
+        padding: 60px 0;
+      }
+
+      .section h2 {
+        font-size: 2.5rem;
+        font-weight: 600;
+        margin-bottom: 20px;
+      }
+
+      .section p {
+        font-size: 1.2rem;
+        font-weight: 300;
+      }
+
+      .footer {
+        background-color: #f8f9fa;
+        padding: 40px 0;
+      }
+
+      .footer .col-md-4 {
+        margin-bottom: 20px;
+      }
+
+      .footer a {
+        color: #333;
+        font-weight: 600;
+        text-decoration: none;
+      }
+
+      .footer a:hover {
+        color: #007bff;
+        text-decoration: underline;
+      }
+
+      .social-icons a {
+        margin-right: 10px;
+        font-size: 1.5rem;
+      }
+
+      .map-container {
+        height: 300px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div>
+        <h1>Mateusz Eats</h1>
+        <p>The best way to get your food delivered</p>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section text-center">
+      <div class="container">
+        <h2>About Us</h2>
+        <p>
+          We've been delivering food safe and reliable for years without ever
+          falling, dropping anything or even delivering the food the slightest
+          cold. You know you can trust us if you want your food delivered the
+          right way!
+        </p>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section bg-light text-center">
+      <div class="container">
+        <h2>Our Services</h2>
+        <p>
+          We offer a wide range of services to meet your needs, from biking to
+          walking for those extra delicate moments. Feel lonely and just want
+          lunch company? We got you covered!
+        </p>
+        <div class="row mt-4">
+          <div class="col-md-4">
+            <img src="static/biking.png" alt="Biking" class="img-fluid" />
+            <h4>Biking</h4>
+          </div>
+          <div class="col-md-4">
+            <img src="static/walking.png" alt="Walking" class="img-fluid" />
+            <h4>Walking</h4>
+          </div>
+          <div class="col-md-4">
+            <img src="static/eating.png" alt="Lunch Friend" class="img-fluid" />
+            <h4>Lunch Friend</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h4>Location</h4>
+            <div id="map" class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2034.9196371782107!2d18.089034799794586!3d59.33429550916811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d0049600f5f%3A0x98e07bb69f9732c6!2sMateusz-eat!5e0!3m2!1sen!2sse!4v1729722343500!5m2!1sen!2sse"
+                referrerpolicy="no-referrer-when-downgrade"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h4>Reviews</h4>
+            <p>Check our reviews on <a href="#">TrustPilot</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
