@@ -11,9 +11,14 @@
 
       .hero {
         height: 100vh;
-        background: url("static/top.png") no-repeat center center/cover;
         color: white;
-        display: flex;
+      }
+
+      .hero img {
+        width: 100%;
+        height: auto;
+        background-image: center;
+        background-size: cover;
         justify-content: center;
         align-items: center;
         text-align: center;
